@@ -7,7 +7,7 @@ export default function BusinessCard() {
 
   const skills = [
     {
-      name: "Assistance, dépannage informatique",
+      name: "Dépannage informatique",
     },
     {
       name: "Création site web",
@@ -59,7 +59,7 @@ export default function BusinessCard() {
                 </div>
                 <div className="!mt-3">
                   <h1 className="text-2xl font-bold text-white mb-2">Joya Kévin</h1>
-                  <p className="text-lg text-white font-medium">Assistance informatique</p>
+                  <p className="text-lg text-white font-medium">Support informatique</p>
                 </div>
               </div>
             </div>
