@@ -7,14 +7,14 @@ export default function BusinessCard() {
 
   const skills = [
     {
-      name: "Dépannage informatique",
+      name: "Dépannage, Réparation informatique",
     },
     {
       name: "Création site web",
     },
     {
       name: "Cours d'informatique",
-    },
+    }
   ]
 
   const coordinates = [
@@ -46,7 +46,7 @@ export default function BusinessCard() {
           <RotateCcw className="w-4 h-4 mr-2" />
           Retourner la carte
         </Button>
-        <div className="relative w-full h-72 perspective-1000">
+        <div className="relative w-full h-80 perspective-1000">
           <div
             className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d ${
               isFlipped ? "rotate-y-180" : ""
@@ -67,7 +67,7 @@ export default function BusinessCard() {
               <div className="w-full h-full bg-white rounded-xl shadow-2xl border border-gray-700 flex flex-col items-center justify-center p-8 text-white">
                 <div className="mb-6">
                   <h2 className="text-[#3F101A] scroll-m-20 border-b !pb-2 !text-3xl !font-semibold !tracking-tight !transition-colors !first:mt-0">
-                    Experiences :
+                    Services :
                   </h2>
                   <ul className="!list-disc [&>li]:!mt-2">
                     {
@@ -80,12 +80,9 @@ export default function BusinessCard() {
                         </li>
                       ))
                     }
-                    <li>
-
-                    </li>
                   </ul>
                 </div>
-                <div className="space-y-3">
+                <div className="space-y-3 !mt-3">
                   {
                     coordinates.map((coordinate, index) => (
                       <div className="flex items-center" key={index}>
@@ -100,6 +97,16 @@ export default function BusinessCard() {
                       </div>
                     ))
                   }
+                </div>
+                <div className="!mt-5">
+                  <Button
+                    className="!rounded-lg hover:cursor-pointer !bg-[#3F101A] !text-white !p-5"
+                    size="lg"
+                  >
+                    <a href="mailto:kevin.joya@outlook.com">
+                      Contactez moi
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
