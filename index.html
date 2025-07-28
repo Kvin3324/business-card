@@ -14,7 +14,11 @@
       gtag('config', 'AW-17388440319');
     </script>
     <!-- Event snippet for Prise de rendez-vous conversion page -->
-    <script> gtag('event', 'conversion', {'send_to': 'AW-17388440319/nIY-CPP2kfgaEP-VuuNA'}); </script>
+    <script>
+      document.getElementById('conversionButton').addEventListener('click', function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17388440319/nIY-CPP2kfgaEP-VuuNA'});
+      });
+    </script>
     <title>Kévin Joya</title>
   </head>
   <body>
