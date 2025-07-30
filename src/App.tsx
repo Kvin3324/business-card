@@ -7,13 +7,13 @@ export default function BusinessCard() {
 
   const skills = [
     {
-      name: "Dépannage, Réparation informatique",
+      name: "Dépannage, Réparation informatique (à domicile ou à distance)",
     },
     {
-      name: "Création site web",
+      name: "Création site web (à distance)",
     },
     {
-      name: "Cours d'informatique",
+      name: "Cours d'informatique (à domicile ou à distance)",
     }
   ]
 
