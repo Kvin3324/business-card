@@ -48,7 +48,7 @@ export default function BusinessCard() {
         </Button>
         <div className="relative w-full h-80 perspective-1000">
           <div
-            className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d ${
+            className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d max-[460px]:w-[97%] max-[460px]:!mx-auto  ${
               isFlipped ? "rotate-y-180" : ""
             }`}
           >
@@ -64,8 +64,8 @@ export default function BusinessCard() {
               </div>
             </div>
             <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
-              <div className="w-full h-full bg-white rounded-xl shadow-2xl border border-gray-700 flex flex-col items-center justify-center p-8 text-white">
-                <div className="mb-6">
+              <div className="w-full h-full bg-white rounded-xl shadow-2xl border border-gray-700 flex flex-col items-center justify-center !p-8 text-white max-[460px]:w-[90%] max-lg:h-[115%] max-[460px]:!mx-auto lg:!h-[110%]">
+                <div className=" mb-6">
                   <h2 className="text-[#3F101A] scroll-m-20 border-b !pb-2 !text-3xl !font-semibold !tracking-tight !transition-colors !first:mt-0">
                     Services :
                   </h2>
